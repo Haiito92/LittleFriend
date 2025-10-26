@@ -1,0 +1,1 @@
+worker: python little_friend.py

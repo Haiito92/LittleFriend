@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import os
 from dotenv import load_dotenv
+from keep_alive import keep_alive
 
 #Env variables
 load_dotenv()
@@ -19,4 +20,5 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 async def on_ready():
     print(f"Bot {bot.user} has connected to Discord!")
 
+keep_alive()
 bot.run(TOKEN)

@@ -3,6 +3,10 @@
 
 ## Greetings Commands Help
 
+### *Info*
+
+Gives information about current config of Greetings.
+
 ### *SetChannel*
 
 Sets the channel in which the welcome message is written. 

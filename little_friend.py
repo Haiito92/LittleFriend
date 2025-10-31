@@ -29,5 +29,5 @@ async def on_ready():
     #await bot.tree.sync(guild=guild)
     print(f"{bot.user} has connected to Discord!")
 
-#keep_alive()
+keep_alive()
 bot.run(TOKEN)

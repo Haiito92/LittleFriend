@@ -23,10 +23,10 @@ async def on_ready():
         if filename.endswith(".py"):
             await bot.load_extension(f"cogs.{filename[:-3]}")
 
-    #await bot.tree.sync()
-    guild = discord.Object(id=692038221403652137)
-    bot.tree.copy_global_to(guild=guild)
-    await bot.tree.sync(guild=guild)
+    await bot.tree.sync()
+    #guild = discord.Object(id=692038221403652137)
+    #bot.tree.copy_global_to(guild=guild)
+    #await bot.tree.sync(guild=guild)
     print(f"{bot.user} has connected to Discord!")
 
 #keep_alive()

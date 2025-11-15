@@ -6,6 +6,7 @@ import requests
 class Jokes(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+        print("Jokes Cog Ready!")
 
     #Command group
     jokes_command = app_commands.Group(name="jokes", description="Jokes commands")
